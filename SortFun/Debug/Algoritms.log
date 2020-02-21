@@ -1,0 +1,7 @@
+﻿  Algoritms.cpp
+C:\Users\Андрей\source\repos\Algoritms\Algoritms.cpp(24,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Андрей\source\repos\Algoritms\Algoritms.cpp(26,16): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Андрей\source\repos\Algoritms\Algoritms.cpp(27,18): warning C4305: *=: усечение из "double" в "float"
+  Source.cpp
+  Создание кода...
+  Algoritms.vcxproj -> C:\Users\Андрей\source\repos\Algoritms\Debug\Algoritms.exe
