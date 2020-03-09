@@ -21,14 +21,16 @@ void Algoritms::OpenReadFile(string Name, int Range) {
 
 void Algoritms::GetRandomNumbers(int Range) {
 	Arr = new float[Range];
+	cout << "¬вед≥ть м≥н≥мальне число\n";
+	cin >> Min;
+	cout << "¬вед≥ть максимальне число \n";
+	cin >> Max;
+	int Delta = Max - Min;
 	srand(time(NULL));
 	for (int i = 0; i < Range; i++) {
-		Arr[i] = rand();
-		Arr[i] *= 0.001;
-		if (Arr[i] > 16 && Arr[i] <= 18) {
-			Arr[i] *= -1;
-		}
-	}
+		Arr[i] = rand() % Delta + Min ;
+		Arr[i] += (rand() % 1000) * 0.001;
+ 	}
 }
 
 void Algoritms::WriteIntoFile(string Name, int Range) {
@@ -110,17 +112,18 @@ void Algoritms::BucketSort(int Range, float* Arr) {
 	}
 
 	Start = clock();
+	int Index = (Max - Min) / 3;
 
 	for (int i = 0; i < Range; i++) {
-		if (Arr[i] < -10) {
+		if (Arr[i] < Min + Index) {
 			Bukets[0][Count[0]] = Arr[i];
 			Count[0]++;
 		}
-		else if (Arr[i] > -10 && Arr[i] < 10) {
+		else if (Arr[i] > Min + Index && Arr[i] < Min + 2*Index) {
 			Bukets[1][Count[1]] = Arr[i];
 			Count[1]++;
 		}
-		else if (Arr[i] > 10) {
+		else if (Arr[i] > Min + 2 * Index) {
 			Bukets[2][Count[2]] = Arr[i];
 			Count[2]++;
 		}
@@ -151,5 +154,20 @@ void Algoritms::InputMassive(int Range) {
 	for (int i = 0; i < Range; i++) {
 		cout << "¬ведiть [" << i + 1 << "] ≈лемент:" << endl;
 		cin >> Arr[i];
+	}
+}
+
+void Algoritms::OutPrint(float* Arr, int Range) {
+	cout << "¬ивести на екран??? 1 - так, 0 - н≥" << endl;
+	int i;
+	cin >> i;
+	if (!i) {
+		return;
+	}
+	for (int i = 0; i < Range; i++) {
+		cout << Arr[i] << " ";
+		if (i % 15 == 0 && i != 0){
+			cout << endl;
+		}
 	}
 }

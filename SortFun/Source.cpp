@@ -30,6 +30,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.ShakerSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else if (choice == 2) {
@@ -37,6 +38,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.ShellSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else if (choice == 3) {
@@ -44,6 +46,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.BucketSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else {
@@ -73,6 +76,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.ShakerSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else if (choice == 2) {
@@ -80,6 +84,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.ShellSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else if (choice == 3) {
@@ -87,6 +92,7 @@ int main()
 			One.WriteIntoFile("1.txt", One.Range);
 			One.OpenReadFile("1.txt", One.Range);
 			One.BucketSort(One.Range, One.Arr);
+			One.OutPrint(One.Arr, One.Range);
 			One.WriteIntoFile(One.Name, One.Range);
 		}
 		else {
@@ -104,5 +110,6 @@ int main()
 		system("cls");
 		main();
 	}
+
 	return EXIT_SUCCESS;
 }

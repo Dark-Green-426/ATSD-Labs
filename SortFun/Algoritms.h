@@ -10,6 +10,8 @@ public:
 	float* Arr;
 	float Number;
 	int Range;
+	int Max;
+	int Min;
 
 	ifstream ReadFile;
 	ofstream WriteFile;
@@ -22,4 +24,5 @@ public:
 	void ShakerSort(int Range, float* Arr);
 	void BucketSort(int Range, float* Arr);
 	void InputMassive(int Range);
+	void OutPrint(float* Arr, int Range);
 };
