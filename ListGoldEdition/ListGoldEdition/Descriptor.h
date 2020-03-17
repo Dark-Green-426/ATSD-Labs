@@ -18,6 +18,7 @@ public:
 	void SortDecrease();
 	void SortIncrease();
 	void PrintUnits();
+	void RandCreate(int);
 	int CountUnits();
 	List* GetPtr(int);
 };

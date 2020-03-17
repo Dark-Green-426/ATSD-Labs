@@ -83,7 +83,7 @@ void Descriptor::PrintUnits()
     List* Ptr = this->Root->Link;
     int Count = 1;
     while (Ptr != NULL) {
-        cout << Count << ":" << Ptr->Data << endl;
+        cout << setw(3) << Count << ":" << Ptr->Data << endl;
         Ptr = Ptr->Link;
         Count++;
     }
@@ -128,5 +128,23 @@ void Descriptor::SortDecrease()
             P1 = P1->Link;
             P2 = P1->Link;
         }
+    }
+}
+
+void Descriptor::RandCreate(int Number)
+{
+    int Len;
+    int IndexASCII;
+    srand(time(NULL));
+    for (int i = 1; i <= Number;i++) 
+    {
+        string Temp;
+        Len = rand() % 30 + 1;
+        for (int j = 0; j < Len; j++) 
+        {
+            IndexASCII = rand() % 57 + 65 ;
+            Temp.insert(j,1,(char)IndexASCII);
+        }
+        this->AddUnit(i, Temp);
     }
 }
