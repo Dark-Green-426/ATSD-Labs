@@ -1,7 +1,0 @@
-﻿  Algoritms.cpp
-C:\Users\Андрей\Documents\GitHub\ATSD-Labs\SortFun\Algoritms.cpp(29,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Андрей\Documents\GitHub\ATSD-Labs\SortFun\Algoritms.cpp(31,27): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\Андрей\Documents\GitHub\ATSD-Labs\SortFun\Algoritms.cpp(32,36): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-  Source.cpp
-  Создание кода...
-  Algoritms.vcxproj -> C:\Users\Андрей\Documents\GitHub\ATSD-Labs\SortFun\Debug\Algoritms.exe

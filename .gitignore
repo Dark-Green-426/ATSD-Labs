@@ -31,15 +31,3 @@
 *.out
 *.app
 
-#Trash
-*.suo
-*.db
-*.ipch
-*.ilk
-*.pdb
-*.log
-*.tlog
-*.idb
-*.lastbuildstate
-*.iobj
-*.ipdb
